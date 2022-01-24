@@ -1,0 +1,111 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 75px);
+  height: 100%;
+  display: flex;
+  background-color: #FDF6E8;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+}
+
+.firstSection {
+  width: 100%;
+  background-image: url("../public/images/farmbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10vw 0 20vw 5vw;
+  /* padding-left: 5vw; */
+  /* padding-top: 10vw; */
+}
+
+.secondSection {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  padding: 5vw 5vw;
+}
+
+.thirdSection {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-size: 7vw;
+  margin: 0;
+  margin-bottom: 3vh;
+  z-index: 1;
+}
+
+.brand {
+  color: #004976;
+}
+
+.description {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 3vh;
+  max-width: 50vw;
+  color: #000;
+  z-index: 1;
+}
+
+.button {
+  border: none;
+  background-color: #004976;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.750rem 1.5rem;
+  letter-spacing: 0.25ch;
+  border-radius: 8px;
+  cursor: pointer;
+  max-width: fit-content;
+  z-index: 1;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  padding: 3vw;
+  padding-right: 0;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 50vh;
+}
+
+.cardAlt {
+  flex: 1;
+  display: flex;
+  padding: 3vw;
+  padding-right: 0;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 50vh;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .firstSection {
+    max-height: 60vh;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .description {
+    max-width: 90vw;
+  }
+}

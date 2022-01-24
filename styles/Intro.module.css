@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 75px);
+  display: flex;
+  background-color: #FDF6E8;
+  overflow: hidden;
+  position: relative;
+  max-height: 100vh;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  padding: 3vw;
+  padding-right: 0;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  max-height: 50vh;
+}
+
+.title {
+  font-size: 5vw;
+  margin: 0;
+  margin-bottom: 3vh;
+}
+
+.brand {
+  color: #004976;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 3vh;
+}
+
+.button {
+  border: none;
+  background-color: #004976;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.750rem 1.5rem;
+  letter-spacing: 0.25ch;
+  border-radius: 8px;
+  cursor: pointer;
+  max-width: fit-content;
+}
