@@ -56,7 +56,7 @@
   font-weight: 600;
   margin: 0;
   margin-bottom: 3vh;
-  max-width: 50vw;
+  max-width: 30vw;
   color: #000;
   z-index: 1;
 }
@@ -71,7 +71,7 @@
   letter-spacing: 0.25ch;
   border-radius: 8px;
   cursor: pointer;
-  max-width: fit-content;
+  max-width: max-content;
   z-index: 1;
 }
 
@@ -96,6 +96,65 @@
   align-items: center;
 }
 
+.cardAlt .description {
+  text-align: center;
+}
+
+.cardAlt .subheading {
+  text-align: center;
+}
+
+.eventBanner {
+  display: flex;
+  flex-direction: row;
+  background-color: #000;
+  color: #FDF6E8;
+  max-height: 10vh;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  padding: 1rem 0;
+}
+
+.eventBanner h2 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  max-width: 70vw;
+  margin: 2.5vw;
+}
+
+.eventBanner button {
+  align-self: center;
+  flex: 1;
+  max-width: max-content;
+  max-height: max-content;
+  padding: 1vw;
+  margin: 2.5vw;
+  border-radius: 8px;
+  border: 2px solid #FDF6E8;
+  background-color: #000;
+  color: #FDF6E8;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.eventBanner button:hover {
+  background-color: #FDF6E8;
+  color: #000;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 767px) {
   .firstSection {
     max-height: 60vh;
@@ -107,5 +166,13 @@
 
   .description {
     max-width: 90vw;
+  }
+
+  .secondSection {
+    flex-direction: column;
+  }
+
+  .thirdSection {
+    flex-direction: column;
   }
 }

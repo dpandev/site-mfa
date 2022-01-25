@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Intro from '../components/Intro'
 import MainSection from '../components/MainSection'
 import styles from '../styles/Home.module.css'
 

@@ -8,6 +8,7 @@
   padding: 0 6vw;
   font-size: 1.3rem;
   font-weight: 700;
+  
 }
 
 .listItem {
@@ -17,4 +18,8 @@
   font-weight: 700;
   color: #FDF6E8;
   cursor: pointer;
+}
+
+.listItem:hover {
+  color: #fdfdfd;
 }
