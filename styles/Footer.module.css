@@ -1,0 +1,18 @@
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: #004976;
+  color: #fff;
+  padding: 1vw 2vw;
+  align-items: center;
+  font-size: 0.8rem;
+  justify-content: center;
+  font-weight: 600;
+  letter-spacing: 0.1ch;
+}
+
+@media screen and (max-width: 767px) {
+  .footerContainer {
+    justify-content: space-between;
+  }
+}

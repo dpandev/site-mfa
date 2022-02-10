@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  height: calc(100vh - 75px);
   height: 100%;
   display: flex;
   background-color: #FDF6E8;
@@ -21,16 +20,15 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: 10vw 0 20vw 5vw;
-  /* padding-left: 5vw; */
-  /* padding-top: 10vw; */
 }
 
 .secondSection {
   width: 100%;
+  margin-top: -10vh;
   justify-content: center;
   display: flex;
   flex-direction: row;
-  padding: 5vw 5vw;
+  padding: 2vw 2vw;
 }
 
 .thirdSection {
@@ -89,7 +87,6 @@
   flex: 1;
   display: flex;
   padding: 3vw;
-  padding-right: 0;
   flex-direction: column;
   justify-content: center;
   max-height: 50vh;
@@ -98,18 +95,20 @@
 
 .cardAlt .description {
   text-align: center;
+  max-width: 400px;
 }
 
 .cardAlt .subheading {
   text-align: center;
+  max-width: 500px;
 }
 
 .eventBanner {
   display: flex;
   flex-direction: row;
-  background-color: #000;
+  background-color: #004976;
   color: #FDF6E8;
-  max-height: 10vh;
+  max-height: fit-content;
   width: 100%;
   align-items: center;
   justify-items: center;
@@ -134,7 +133,7 @@
   margin: 2.5vw;
   border-radius: 8px;
   border: 2px solid #FDF6E8;
-  background-color: #000;
+  background-color: #004976;
   color: #FDF6E8;
   cursor: pointer;
   font-size: 1.2rem;
@@ -144,7 +143,7 @@
 
 .eventBanner button:hover {
   background-color: #FDF6E8;
-  color: #000;
+  color: #004976;
 }
 
 .grow {
@@ -157,7 +156,7 @@
 
 @media screen and (max-width: 767px) {
   .firstSection {
-    max-height: 60vh;
+    height: 60vh;
   }
 
   .title {
@@ -166,13 +165,23 @@
 
   .description {
     max-width: 90vw;
+    text-shadow: 0px 0px 10px rgba(255,255,255,1);
   }
 
   .secondSection {
     flex-direction: column;
+    padding-bottom: 10vw;
   }
 
   .thirdSection {
     flex-direction: column;
+  }
+
+  .secondSection .cardAlt {
+    margin-top: -10vw;
+  }
+
+  .eventBanner h2 {
+    font-size: 1.2rem;
   }
 }
