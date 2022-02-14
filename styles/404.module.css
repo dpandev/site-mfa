@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  height: calc(100vh - 105px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.container h2 {
+  font-size: 2rem;
+}
+
+.button {
+  font-size: 1.5rem;
+  margin: 3vh;
+  padding: 15px 45px;
+  background-color: #004976;
+  border-radius: 8px;
+  color: #F8F0DF;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    height: calc(100vh - 90px);
+  }
+}
+
+@media screen and (max-width: 367px) {
+  .container {
+    height: calc(100vh - 100px);
+  }
+}

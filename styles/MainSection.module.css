@@ -24,11 +24,15 @@
 
 .secondSection {
   width: 100%;
-  margin-top: -10vh;
   justify-content: center;
   display: flex;
   flex-direction: row;
   padding: 2vw 2vw;
+}
+
+.card span {
+  max-width: 600px;
+  max-height: 400px;
 }
 
 .thirdSection {
@@ -54,7 +58,7 @@
   font-weight: 600;
   margin: 0;
   margin-bottom: 3vh;
-  max-width: 30vw;
+  max-width: 50vw;
   color: #000;
   z-index: 1;
 }
@@ -70,7 +74,6 @@
   border-radius: 8px;
   cursor: pointer;
   max-width: max-content;
-  z-index: 1;
 }
 
 .card {
@@ -126,11 +129,9 @@
 
 .eventBanner button {
   align-self: center;
-  flex: 1;
   max-width: max-content;
   max-height: max-content;
-  padding: 1vw;
-  margin: 2.5vw;
+  margin: 15px;
   border-radius: 8px;
   border: 2px solid #FDF6E8;
   background-color: #004976;
@@ -156,7 +157,8 @@
 
 @media screen and (max-width: 767px) {
   .firstSection {
-    height: 60vh;
+    height: 55vh;
+    padding: 20vw 0 20vw 5vw;
   }
 
   .title {
@@ -169,8 +171,8 @@
   }
 
   .secondSection {
-    flex-direction: column;
-    padding-bottom: 10vw;
+    flex-direction: column-reverse;
+    margin-top: 8vh;
   }
 
   .thirdSection {
