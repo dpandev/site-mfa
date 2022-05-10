@@ -29,6 +29,7 @@
   background-image: url('../public/images/bg-hills.png');
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
 }
 
 .card span {
