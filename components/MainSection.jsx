@@ -31,7 +31,7 @@ const MainSection = () => {
         </div>
       </div>
       <div className={styles.eventBanner}>
-        <h2>Checkout this year's Mayonnaise Festivals!</h2>
+        <h2>{"Checkout this year's Mayonnaise Festivals!"}</h2>
         <button className={styles.grow}><Link href='/services'>View Events</Link></button>
       </div>
       <div className={styles.thirdSection}>

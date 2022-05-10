@@ -40,7 +40,7 @@ const Services = () => {
         </div>
       </div>
       <div className={styles.banner}>
-        <h2>We're proud to take part in overseeing over 43 million acres!</h2>
+        <h2>{"We're proud to take part in overseeing over 43 million acres!"}</h2>
         <button className={styles.grow}><Link href='/contact'>Contact Us</Link></button>
       </div>
       <div className={styles.secondSection}>
