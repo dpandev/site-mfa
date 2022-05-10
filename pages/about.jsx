@@ -17,26 +17,26 @@ const About = () => {
           <a className={styles.button}>Contact Us</a>
         </Link>
       </div>
-      <div className={styles.section}>
+      <div className={`${styles.section} ${styles.marginTop}`}>
         <div className={styles.heading}>
           <h2>Our History</h2>
         </div>
         <div className={styles.text}>
           <span>MFA was founded in 1992 as an organization for farmers. We use farmer-led investigation and information sharing to help farmers practice an agriculture that benefits both the land and people. Our members have conventional and organic systems; employ diverse management practices; run operations of all sizes; and come from a range of backgrounds. These farmers come together, however, because they believe in nature as the model for agriculture and they are committed to moving their operations toward sustainability.</span>
         </div>
-        <Link href='/farmers'>
-          <a className={styles.button}>Meet the Farmers</a>
+        <Link href='/services'>
+          <a className={styles.button}>View Our Services</a>
         </Link>
       </div>
-      {/* <div className={styles.bottom}>
+      <div className={styles.bottom}>
           <Image
-            src='/../public/images/farmRedBarn.jpg'
+            src='/../public/images/bg-farming.png'
             layout='responsive'
             width={200}
-            height={200}
+            height={100}
             className={styles.image}
           />
-        </div> */}
+        </div>
     </div>
   )
 }

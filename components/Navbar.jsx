@@ -43,13 +43,7 @@ export const Navbar = () => {
               <Link href='/'>Home</Link>
             </li>
             <li className={styles.listItem}>
-              <Link href='/farmers'>Farmers</Link>
-            </li>
-            <li className={styles.listItem}>
               <Link href='/services'>Services</Link>
-            </li>
-            <li className={styles.listItem}>
-              <Link href='/safety'>Safety</Link>
             </li>
             <li className={styles.listItem}>
               <Link href='/about'>About</Link>
@@ -98,9 +92,7 @@ export const Navbar = () => {
         <div className={styles.mobileNavMenu}>
           <div className={styles.mobileNavList}>
             <Link href='/'><a onClick={toggleMobileMenu}>Home</a></Link>
-            <Link href='/farmers'><a onClick={toggleMobileMenu}>Farmers</a></Link>
             <Link href='/services'><a onClick={toggleMobileMenu}>Food Services</a></Link>
-            <Link href='/safety'><a onClick={toggleMobileMenu}>Food Safety</a></Link>
             <Link href='/about'><a onClick={toggleMobileMenu}>About Us</a></Link>
             <Link href='/contact'><a onClick={toggleMobileMenu}>Contact Us</a></Link>
           </div>

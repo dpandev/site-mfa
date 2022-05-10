@@ -26,7 +26,7 @@ const Contact = () => {
       body: JSON.stringify(data),
     })
 
-    alert('SUCCESS!! :-)\n\n' + JSON.stringify(data, null, 4))
+    // alert('SUCCESS!! :-)\n\n' + JSON.stringify(data, null, 4))
     return false;
   }
 

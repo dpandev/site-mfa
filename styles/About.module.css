@@ -1,9 +1,13 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 3vh 3vw;
+  padding-top: 20vh;
   overflow: hidden;
   width: 100%;
+  background-image: url('../public/images/bg-greenabstract.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
   /* min-height: calc(100vh - 105px); */
 }
 
@@ -18,8 +22,9 @@
 .section {
   display: flex;
   flex-direction: column;
-  margin: auto auto 15vh auto;
+  margin: auto;
   align-items: center;
+  padding: 0 3vw;
 }
 
 .section .text {
@@ -40,6 +45,19 @@
   border-radius: 8px;
   margin-top: 3vw;
   max-width: fit-content;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.bottom {
+  padding: 0;
+}
+
+.marginTop {
+  margin-top: 30vh;
 }
 
 @media screen and (max-width: 767px) {

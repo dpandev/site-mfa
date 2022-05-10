@@ -10,16 +10,14 @@
 
 .firstSection {
   width: 100%;
-  background-image: url("../public/images/farmbg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  max-height: 80vh;
+  justify-content: center;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 10vw 0 20vw 5vw;
+  flex-direction: row;
+  padding: 4vw 2vw;
+  background-image: url('../public/images/bg-skyblue.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .secondSection {
@@ -28,9 +26,9 @@
   display: flex;
   flex-direction: row;
   padding: 2vw 2vw;
-  background-image: url('../public/images/bg-wave.png');
+  background-image: url('../public/images/bg-hills.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 .card span {
@@ -47,20 +45,9 @@
   justify-content: center;
   display: flex;
   flex-direction: row;
-  background-image: url('../public/images/bg-geo.png');
+  background-image: url('../public/images/bg-field.png');
   background-repeat: no-repeat;
-  background-position: center;
-}
-
-.title {
-  font-size: 7vw;
-  margin: 0;
-  margin-bottom: 3vh;
-  z-index: 1;
-}
-
-.brand {
-  color: #004976;
+  background-size: cover;
 }
 
 .description {
@@ -71,19 +58,6 @@
   max-width: 50vw;
   color: #000;
   z-index: 1;
-}
-
-.button {
-  border: none;
-  background-color: #004976;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.750rem 1.5rem;
-  letter-spacing: 0.25ch;
-  border-radius: 8px;
-  cursor: pointer;
-  max-width: max-content;
 }
 
 .card {
@@ -116,7 +90,7 @@
   max-width: 500px;
 }
 
-.eventBanner {
+.banner {
   display: flex;
   flex-direction: row;
   background-color: #004976;
@@ -126,9 +100,13 @@
   align-items: center;
   justify-items: center;
   padding: 1rem 0;
+  background-image: url('../public/images/bg-whiteabstract.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
-.eventBanner h2 {
+.banner h2 {
   display: flex;
   flex: 1;
   justify-content: center;
@@ -137,7 +115,7 @@
   margin: 2.5vw;
 }
 
-.eventBanner button {
+.banner button {
   align-self: center;
   max-width: max-content;
   max-height: max-content;
@@ -152,7 +130,7 @@
   padding: 1rem;
 }
 
-.eventBanner button:hover {
+.banner button:hover {
   background-color: #FDF6E8;
   color: #004976;
 }
@@ -166,9 +144,14 @@
 }
 
 @media screen and (max-width: 767px) {
+  .container{
+    padding-top: 0;
+  }
+
   .firstSection {
-    height: 55vh;
-    padding: 20vw 0 20vw 5vw;
+    flex-direction: column-reverse;
+    margin-top: 15vh;
+    background-image: url('../public/images/bg-grass.png');
   }
 
   .title {
@@ -193,7 +176,7 @@
     margin-top: -10vw;
   }
 
-  .eventBanner h2 {
+  .banner h2 {
     font-size: 1.2rem;
   }
 }
